@@ -1,31 +1,34 @@
+const dLight = document.getElementById("dLight");
+const dlightImage = document.getElementById("dLightImage");
+
+const aLight = document.getElementById("aLight");
+const alightImage = document.getElementById("aLightImage");
+
+const tLight = document.getElementById("tLight");
+const tlightImage = document.getElementById("tLightImage");
 
 
-function aHover(element) {
-    element.setAttribute("src", "assets/atlantisidle.gif");
-    console.log("hovering");
-}
 
-function dHover(element) {
-    element.setAttribute("src", "assets/discordidle.gif");
-    console.log("hovering");
-}
+dLight.addEventListener("mouseover", function(event) {
+    dlightImage.setAttribute("src", "assets/discordidle.gif");
+});
 
-function tHover(element) {
-    element.setAttribute("src", "assets/twitteridle.gif");
-    console.log("hovering");
-}
+dLight.addEventListener("mouseout", function(event) {
+    dlightImage.setAttribute("src", "assets/empty.png");
+});
 
-function lightOff(element) {
-    element.setAttribute("src", "assets/empty.png");
-}
+aLight.addEventListener("mouseover", function(event) {
+    alightImage.setAttribute("src", "assets/atlantisidle.gif");
+});
 
-/*
-<a 
-                    href="https://docs.google.com/presentation/d/1uOcYKPrBEqKTxaufYiDkfIpILrzrLEOcMVSWpq1H1oc/edit#slide=id.ge1d4042eb9_3_1" 
-                    class="spotlight"></a>
+aLight.addEventListener("mouseout", function(event) {
+    alightImage.setAttribute("src", "assets/empty.png");
+});
 
-                     <a href="https://twitter.com/atlantis0x" class="spotlight"></a>
+tLight.addEventListener("mouseover", function(event) {
+    tlightImage.setAttribute("src", "assets/twitteridle.gif");
+});
 
-<a href="https://discord.com/invite/j43Ycp72uK" class="spotlight"></a>
-
-                */
+tLight.addEventListener("mouseout", function(event) {
+    tlightImage.setAttribute("src", "assets/empty.png");
+});

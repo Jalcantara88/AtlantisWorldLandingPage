@@ -17,6 +17,7 @@ html {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    position: fixed;
 }
 
 body {
@@ -30,77 +31,110 @@ body {
 
 .cityBack {
     background-image: url("../assets/carchase.gif"), url("../assets/bldgBack.png");
-    background-position-y: 87%, 90%;
+    background-position-y: 80%, 88%;
     background-position-x: center, center;
     background-size: 500px, 500px;
     background-repeat: no-repeat, repeat-x;
     height: 100%;
 }
 
-.light {
-    height: 100%;
+.balloonBox {
+    position: absolute;
+    top:10%;
+    right: 20%;
+    border-radius: 100%;
+    overflow: visible;
+    width: 100px;
+    height: 75px;
 }
 
-#atlantisImage {
-    background-image: url("../assets/atlantisnormal.gif"), url("../assets/redcar.gif");
-    background-position-y: 90%, 85%;
-    background-position-x: center, 30%;
-    background-size: 300px, 150px;
-    background-repeat: no-repeat, no-repeat;
+.balloon {
+   position:relative;
+    width: 150px;
+    height: 100px;
+    top: -25px;
+    left: -25px;
 }
 
-#atlantisButton:hover + #atlantisImage {
-    background-image: url("../assets/atlantisidle.gif"), url("../assets/redcar.gif");
+.lightBox {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    position:absolute;  
+    overflow: visible;
 }
 
-#discordImage {
+#aLight {
+    top: 30%;
+    left: 40%;
+}
+
+#dLight {
+    top: 40%;
+    right: 5%;
+}
+
+#tLight {
+    top: 40%;
+    left: 5%;
+    width: 90px;
+    height: 90px;
+}
+
+.lightImage {
+    display: block;
+    height: 400px;
+    width: 400px;
+    position:relative;  
+    background-size: 400px;
+    padding: 0px;
+    pointer-events: none;
+}
+
+#dLightImage {
+    top: -55px;
+    left: -195px;
     background-image: url("../assets/discordnormal.gif");
-    background-position-y: 90%;
-    background-position-x: 70%;
-    background-size: 300px;
-    background-repeat: no-repeat;
 }
 
-#discordButton:hover + #discordImage {
-    background-image: url("../assets/discordidle.gif");
-
+#aLightImage {
+    top: -20px;
+    left: -128px;
+    background-image: url("../assets/atlantisnormal.gif");
 }
 
-#twitterImage {
+#tLightImage {
+    top: -45px;
+    left: -70px;
     background-image: url("../assets/twitternormal.gif");
-    background-position-y: 80%;
-    background-position-x: 40%;
-    background-size: 200px;
-    background-repeat: no-repeat;
-}
-#twitterButton:hover + #twitterImage {
-    background-image: url("../assets/twitteridle.gif");
-
 }
 
 .cityFront {
-    background-image: url("../assets/bldgFront.png"), url("../assets/airballoon.gif");
-    background-position-y:  100%, 70%;
-    background-position-x: center, 80%;
-    background-size:  300px, 200px;
+    background-image: url("../assets/bldgFront.png"), url("../assets/redcar.gif");
+    background-position-y:  100%, 0%;
+    background-position-x: center, 30%;
+    background-size:  300px, 150px;
     background-repeat:  repeat-x, no-repeat;
-    height: 100%;
-    z-index: 3;
+    height: 200px;
+    position:absolute;
+    width: 100%;
+    bottom: 10%;
 }
 
-
-
 .cityBottom {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
     background-color: #11101a;
-    color: white;
-    padding: 20px;
+    color: rgb(88, 83, 83);
     height: 10%;
-
+    text-align: center;
+    align-items: center;
+    border-top: 3px solid #11101a;
 }
 
 .sky {
     height:90%;
-
     background-image: url("../assets/clouds.png"), url("../assets/moon.png"), url("../assets/eth.png"), url("../assets/stars.png");
     background-repeat: repeat-x, no-repeat, no-repeat, repeat;
     background-position-y: 40%, 20%, 10%, 0;
@@ -110,137 +144,42 @@ body {
 
 .content {
     height: 100vh;
+    width: 100vw;
 }
 
-
-
-#atlantisButton {
-    height: 80px;
-    width: 80px;
-}
-
-#twitterButton {
-    height: 60px;
-    width: 60px;
-
-}
-
-#discordButton {
-    width: 70px;
-    height: 70px;
-
-}
-
-.spotlight {
-    height: 400px;
-    width: 400px;
-    position: absolute;
-}
-
-#atlantis {
-    background-image: url("../assets/atlantisnormal.gif");
-    background-size: cover;
-}
-
-#discord {
-    background-image: url("../assets/discordnormal.gif");
-    background-size: cover;
-}
-
-#twitter {
-    background-image: url("../assets/twitternormal.gif");
-    background-size: cover;
-}
-
-@media screen and (max-width: 600px) {
-
-    #atlantisButton {
-        left: 34.5%;
-        top: 44.5%;
-    }
-
-    #discordButton {
-        left: 66%;
-        top: 55.5%;
-    }
-
-    #twitterButton {
-        top: 56%;
-        left: 15.5%;
-    }
-
-    #atlantisImage {
-        background-position-y: 90%, 85%;
-        background-position-x: 50%, 30%;
-    }
-    #discordImage {
-        background-position-y: 90%;
-        background-position-x: 80%;
-    }
-    #twitterImage {
-        background-position-y: 80%;
-        background-position-x: 20%;
-    }
-}
 
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {
-    #atlantisButton {
-        left: 44.5%;
-        top: 44.5%;
+    #aLight {
+        top: 30%;
+        left: 40%;
     }
 
-    #discordButton {
-        left: 65%;
-        top: 55.5%;
+    #tLight {
+        top: 40%;
+        left: 20%;
+    }
+    #dLight {
+        top: 40%;
+        right: 28%;
     }
 
-    #twitterButton {
-        top: 56%;
-        left: 28.5%;
-    }
-
-    #atlantisImage {
-        background-position-y: 90%, 85%;
-        background-position-x: 53%, 30%;
-    }
-    #discordImage {
-        background-position-y: 90%;
-        background-position-x: 70%;
-    }
-    #twitterImage {
-        background-position-y: 80%;
-        background-position-x: 33%;
-    }
+   
 }
 
 @media only screen and (min-width: 1200px) {
-    #atlantisButton {
-        left: 44%;
-        top: 44%;
+    #aLight {
+        top: 30%;
+        left: 45%;
     }
 
-    #discordButton {
-        left: 58.25%;
-        top: 55.5%;
+    #tLight {
+        top: 40%;
+        left: 30%;
     }
-
-    #twitterButton {
-        top: 56%;
-        left: 36.5%;
-    }
-
-    #atlantisImage {
-        background-position-y: 90%, 85%;
-        background-position-x: 48%, 30%;
-    }
-    #discordImage {
-        background-position-y: 90%;
-        background-position-x: 60%;
-    }
-    #twitterImage {
-        background-position-y: 80%;
-        background-position-x: 40%;
+    #dLight {
+        top: 40%;
+        right: 35%;
     }
 }
 
