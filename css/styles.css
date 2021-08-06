@@ -1,0 +1,247 @@
+:root {
+    --main-color: "#fff";
+    font-family: 'Baloo Da 2', cursive;;
+}
+a { 
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orchid;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(#191264, #6e529d  );
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cityBack {
+    background-image: url("../assets/carchase.gif"), url("../assets/bldgBack.png");
+    background-position-y: 87%, 90%;
+    background-position-x: center, center;
+    background-size: 500px, 500px;
+    background-repeat: no-repeat, repeat-x;
+    height: 100%;
+}
+
+.light {
+    height: 100%;
+}
+
+#atlantisImage {
+    background-image: url("../assets/atlantisnormal.gif"), url("../assets/redcar.gif");
+    background-position-y: 90%, 85%;
+    background-position-x: center, 30%;
+    background-size: 300px, 150px;
+    background-repeat: no-repeat, no-repeat;
+}
+
+#atlantisButton:hover + #atlantisImage {
+    background-image: url("../assets/atlantisidle.gif"), url("../assets/redcar.gif");
+}
+
+#discordImage {
+    background-image: url("../assets/discordnormal.gif");
+    background-position-y: 90%;
+    background-position-x: 70%;
+    background-size: 300px;
+    background-repeat: no-repeat;
+}
+
+#discordButton:hover + #discordImage {
+    background-image: url("../assets/discordidle.gif");
+
+}
+
+#twitterImage {
+    background-image: url("../assets/twitternormal.gif");
+    background-position-y: 80%;
+    background-position-x: 40%;
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+#twitterButton:hover + #twitterImage {
+    background-image: url("../assets/twitteridle.gif");
+
+}
+
+.cityFront {
+    background-image: url("../assets/bldgFront.png"), url("../assets/airballoon.gif");
+    background-position-y:  100%, 70%;
+    background-position-x: center, 80%;
+    background-size:  300px, 200px;
+    background-repeat:  repeat-x, no-repeat;
+    height: 100%;
+    z-index: 3;
+}
+
+
+
+.cityBottom {
+    background-color: #11101a;
+    color: white;
+    padding: 20px;
+    height: 10%;
+
+}
+
+.sky {
+    height:90%;
+
+    background-image: url("../assets/clouds.png"), url("../assets/moon.png"), url("../assets/eth.png"), url("../assets/stars.png");
+    background-repeat: repeat-x, no-repeat, no-repeat, repeat;
+    background-position-y: 40%, 20%, 10%, 0;
+    background-position-x: center, center, center, 0;
+    background-size: 1000px, 200px, 300px, 400px;
+}
+
+.content {
+    height: 100vh;
+}
+
+
+
+#atlantisButton {
+    height: 80px;
+    width: 80px;
+}
+
+#twitterButton {
+    height: 60px;
+    width: 60px;
+
+}
+
+#discordButton {
+    width: 70px;
+    height: 70px;
+
+}
+
+.spotlight {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+}
+
+#atlantis {
+    background-image: url("../assets/atlantisnormal.gif");
+    background-size: cover;
+}
+
+#discord {
+    background-image: url("../assets/discordnormal.gif");
+    background-size: cover;
+}
+
+#twitter {
+    background-image: url("../assets/twitternormal.gif");
+    background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+
+    #atlantisButton {
+        left: 34.5%;
+        top: 44.5%;
+    }
+
+    #discordButton {
+        left: 66%;
+        top: 55.5%;
+    }
+
+    #twitterButton {
+        top: 56%;
+        left: 15.5%;
+    }
+
+    #atlantisImage {
+        background-position-y: 90%, 85%;
+        background-position-x: 50%, 30%;
+    }
+    #discordImage {
+        background-position-y: 90%;
+        background-position-x: 80%;
+    }
+    #twitterImage {
+        background-position-y: 80%;
+        background-position-x: 20%;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    #atlantisButton {
+        left: 44.5%;
+        top: 44.5%;
+    }
+
+    #discordButton {
+        left: 65%;
+        top: 55.5%;
+    }
+
+    #twitterButton {
+        top: 56%;
+        left: 28.5%;
+    }
+
+    #atlantisImage {
+        background-position-y: 90%, 85%;
+        background-position-x: 53%, 30%;
+    }
+    #discordImage {
+        background-position-y: 90%;
+        background-position-x: 70%;
+    }
+    #twitterImage {
+        background-position-y: 80%;
+        background-position-x: 33%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #atlantisButton {
+        left: 44%;
+        top: 44%;
+    }
+
+    #discordButton {
+        left: 58.25%;
+        top: 55.5%;
+    }
+
+    #twitterButton {
+        top: 56%;
+        left: 36.5%;
+    }
+
+    #atlantisImage {
+        background-position-y: 90%, 85%;
+        background-position-x: 48%, 30%;
+    }
+    #discordImage {
+        background-position-y: 90%;
+        background-position-x: 60%;
+    }
+    #twitterImage {
+        background-position-y: 80%;
+        background-position-x: 40%;
+    }
+}
+
+
