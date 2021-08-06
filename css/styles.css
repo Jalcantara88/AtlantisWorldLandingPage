@@ -67,6 +67,9 @@ body {
 #aLight {
     top: 40%;
     left: 40%;
+    height: 90px;
+    width: 90px;
+    border: 3px solid red;
 }
 
 #dLight {
@@ -98,8 +101,11 @@ body {
 }
 
 #aLightImage {
-    top: -20px;
-    left: -128px;
+    top: -30px;
+    left: -165px;
+    height: 500px;
+    width: 500px;
+    background-size: 500px;
     background-image: url("../assets/atlantisnormal.gif");
 }
 
@@ -137,7 +143,7 @@ body {
     height:90%;
     background-image: url("../assets/clouds.png"), url("../assets/moon.png"), url("../assets/eth.png"), url("../assets/stars.png");
     background-repeat: repeat-x, no-repeat, no-repeat, repeat;
-    background-position-y: 40%, 20%, 10%, 0;
+    background-position-y: 40%, 10%, 10%, 0;
     background-position-x: center, center, center, 0;
     background-size: 1000px, 200px, 300px, 400px;
 }
@@ -147,6 +153,12 @@ body {
     width: 100vw;
 }
 
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
 
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {
