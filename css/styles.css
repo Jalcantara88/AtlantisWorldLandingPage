@@ -31,7 +31,7 @@ body {
 
 .cityBack {
     background-image: url("../assets/carchase.gif"), url("../assets/bldgBack.png");
-    background-position-y: 80%, 88%;
+    background-position-y: 85%, 88%;
     background-position-x: center, center;
     background-size: 500px, 500px;
     background-repeat: no-repeat, repeat-x;
@@ -65,17 +65,17 @@ body {
 }
 
 #aLight {
-    top: 30%;
+    top: 40%;
     left: 40%;
 }
 
 #dLight {
-    top: 40%;
+    top: 50%;
     right: 5%;
 }
 
 #tLight {
-    top: 40%;
+    top: 50%;
     left: 5%;
     width: 90px;
     height: 90px;
@@ -151,16 +151,16 @@ body {
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {
     #aLight {
-        top: 30%;
+        top: 40%;
         left: 40%;
     }
 
     #tLight {
-        top: 40%;
+        top: 50%;
         left: 20%;
     }
     #dLight {
-        top: 40%;
+        top: 50%;
         right: 28%;
     }
 
@@ -169,16 +169,16 @@ body {
 
 @media only screen and (min-width: 1200px) {
     #aLight {
-        top: 30%;
+        top: 40%;
         left: 45%;
     }
 
     #tLight {
-        top: 40%;
+        top: 50%;
         left: 30%;
     }
     #dLight {
-        top: 40%;
+        top: 50%;
         right: 35%;
     }
 }
