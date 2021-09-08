@@ -105,7 +105,8 @@ body {
     height: 500px;
     width: 500px;
     background-size: 500px;
-    background-image: url("../assets/atlantisnormal.gif");
+    background-image: url("../assets/telegramnormal.gif");
+    /* background-image: url("../assets/atlantisnormal.gif"); */
 }
 
 #tLightImage {
