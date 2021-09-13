@@ -171,7 +171,7 @@ body {
     margin-bottom: 20px;
 }
 
-#hiredForm {
+#form {
     border: 3px solid rgb(187, 27, 166);
     background: linear-gradient(to bottom, white, whitesmoke );
     background-color: whitesmoke;
@@ -190,7 +190,7 @@ body {
     margin-right: 21%;
 }
 
-#hiredForm h1 {
+#form h1 {
     text-align: center;
     padding: 0px;
 }
@@ -200,7 +200,7 @@ body {
     border-bottom: 2px solid rgb(32, 130, 187);
 }
 
-#hiredSubmit {
+.hiredSubmit {
     border-color: rgb(192, 36, 145);
     background-color: rgb(251, 152, 238);
     text-align: center;
@@ -224,6 +224,27 @@ body {
     margin-right: 6%;
 }
 
+.field {
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 10%;
+  }
+  
+  .field label {
+    display: block;
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .field input {
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  
+  
+
 
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {
@@ -241,14 +262,14 @@ body {
         right: 28%;
     }
 
-   #hiredForm {
+   #form {
        width: 60%;
        margin-top: 15%;
    }
 }
 
 @media screen and (min-width: 800px) {
-    #hiredForm {
+    #form {
         width: 40%;
     }
 }
@@ -267,7 +288,7 @@ body {
         top: 50%;
         right: 35%;
     }
-    #hiredForm {
+    #form {
         width: 30%;
         margin: 10% auto 0px 3%;
     }
