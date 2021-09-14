@@ -237,31 +237,37 @@ body {
     text-align: left;
     /* border: 3px solid red; */
     display: inline-block;
-  }
+}
   
-  .field label {
+.field label {
     display: block;
-    font-size: 12px;
+    font-size: 18px;
     color: var(--main-color);
-  }
+}
   
-  .field input {
+.field input {
     display: block;
     min-width: 250px;
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 20px;
     font-family: vcr;
-  }
+    width: 90%;
+}
   
 #hireBalloon {
     left: 20%;
 }  
 
 #message {
-    width: 100%;
+    width: 70%;
+    margin-left: 15%;
+    height: 100px;
+    resize: none;
 }
 
-
+#resumeField {
+    width: 70%;
+}
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {
     #aLight {
