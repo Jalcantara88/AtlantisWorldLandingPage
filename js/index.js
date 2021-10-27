@@ -18,8 +18,7 @@ dLight.addEventListener("mouseout", function(event) {
 });
 
 aLight.addEventListener("mouseover", function(event) {
-    alightImage.setAttribute("src", "assets/telegramidle.gif");
-    // alightImage.setAttribute("src", "assets/atlantisidle.gif");
+    alightImage.setAttribute("src", "assets/atlantisidle.gif");
 });
 
 aLight.addEventListener("mouseout", function(event) {
